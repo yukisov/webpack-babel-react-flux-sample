@@ -21,7 +21,8 @@
     "webpack": "^1.12.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve-watch": "webpack-dev-server --content-base public/ -d",
+    "test": "webpack-dev-server 'mocha!./test/entry.js' --port 8081 --output-file test.js"
   },
   "keywords": [],
   "author": "",
