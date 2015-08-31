@@ -6,3 +6,18 @@ ToDo
 
 - Use [react-intl](https://github.com/yahoo/react-intl)
 - Use [Jest](https://facebook.github.io/jest/docs/tutorial-react.html) for testing
+
+Development
+-----
+
+```
+$ npm run serve-watch
+```
+
+Testing
+-----
+
+```
+$ npm run test
+```
+
