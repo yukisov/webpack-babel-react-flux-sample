@@ -14,17 +14,13 @@ module.exports = {
     filename: "app.js"
   },
   module: {
-    //preLoaders: [
-    //  {
-    //      test: /\.jsx?$/,
-    //      loaders: 'jsx?harmony'
-    //  },
-    //  {
-    //    test: /\.js$/,
-    //    exclude: /node_modules/,
-    //    loader: "eslint-loader"
-    //  }
-    //],
+    preLoaders: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: "eslint-loader"
+      }
+    ],
     loaders: [
       {
         test: /\.css$/,
@@ -35,22 +31,13 @@ module.exports = {
          exclude: /(node_modules|bower_components)/,
          loader: 'babel-loader'
       }
-      //{
-      //    test: /\.jsx?$/,
-      //    loaders: 'jsx?harmony'
-      //    //loaders: ['react-hot', 'jsx?harmony']
-      //    //include: path.join(__dirname, 'src/js')
-      //}
     ]
   },
   resolve: {
     // require()する時に拡張子を省略可能にします。
     extensions: ['', '.js', '.jsx', '.css']
   },
-  //eslint: {
-  //  configFile: './.eslintrc'
-  //},
-  plugins: [
-    new webpack.HotModuleReplacementPlugin()
-  ]
+  eslint: {
+    configFile: './.eslintrc'
+  }
 };

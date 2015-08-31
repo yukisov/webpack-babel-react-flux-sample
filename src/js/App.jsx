@@ -23,7 +23,7 @@ var App = React.createClass({
     return (
       <div>
         <Hello />
-        <div>Foo</div>
+        <div>Bar</div>
       </div>
     );
   }
