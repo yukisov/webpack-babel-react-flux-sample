@@ -14,10 +14,15 @@ Development
 $ npm run serve-watch
 ```
 
+And open `http://localhost:8080/webpack-dev-server/` using browser.
+
+
 Testing
 -----
 
 ```
 $ npm run test
 ```
+
+And open `http://localhost:8081/js/test` using browser.
 
