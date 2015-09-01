@@ -1,5 +1,5 @@
-var React = require('react'),
-    App = require('./App');
+import React from 'react';
+import App from './App';
 
 React.render(
   <App />,
