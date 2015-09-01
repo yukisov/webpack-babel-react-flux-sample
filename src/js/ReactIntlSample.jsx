@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactIntl from 'react-intl';
 
-// React-Intl
 let IntlMixin       = ReactIntl.IntlMixin,
     FormattedNumber = ReactIntl.FormattedNumber,
     FormattedDate = ReactIntl.FormattedDate,
@@ -71,8 +70,6 @@ var ReactIntlSample = React.createClass({
         );
     }
 });
-
-
 
 module.exports = {
   Component: ReactIntlSample,
