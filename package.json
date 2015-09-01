@@ -22,7 +22,9 @@
   },
   "scripts": {
     "serve-watch": "webpack-dev-server --content-base public/ -d",
-    "test": "webpack-dev-server 'mocha!./test/entry.js' --port 8081 --output-file test.js"
+    "open": "open http://localhost:8080/webpack-dev-server/",
+    "test": "webpack-dev-server 'mocha!./test/entry.js' --port 8081 --output-file test.js",
+    "open-test": "open http://localhost:8081/js/test"
   },
   "keywords": [],
   "author": "",
